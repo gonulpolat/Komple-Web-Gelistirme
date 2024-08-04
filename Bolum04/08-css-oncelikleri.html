@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Öncelikleri</title>
+    <style>
+      h1 {
+        color: red;
+      }
+
+      h1 {
+        font-size: 16px;
+        color: blue;
+      }
+
+      #page-title {
+        border-bottom: 2px solid green;
+        color: green;
+      }
+
+      .text-yellow {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Css Öncelikleri
+    - inline css
+    - id selector
+    - class selector
+    - element selector
+    - browser default -->
+    <main>
+      <section>
+        <h1 id="page-title" class="text-yellow" style="color: chocolate">
+          Welcome To MovieApp
+        </h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
+          esse.
+        </p>
+      </section>
+      <section>
+        <h2>How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>

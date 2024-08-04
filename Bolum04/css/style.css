@@ -1,0 +1,21 @@
+section {
+  background-color: #17153b;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+h2 {
+  color: #c8acd6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #2e236c;
+  text-decoration: none; /* altçizgi kaldırma */
+}
