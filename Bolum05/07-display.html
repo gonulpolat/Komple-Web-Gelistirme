@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      .box {
+        width: 60px;
+        height: 60px;
+      }
+
+      a {
+        width: 100px; /* width is not working for inline element*/
+        height: 100px; /* height is not working for inline element*/
+      }
+
+      #first {
+        background-color: red;
+      }
+
+      #second {
+        background-color: green;
+      }
+
+      #third {
+        background-color: blue;
+      }
+    </style>
+    <style>
+      .box1 {
+        width: 60px;
+        height: 60px;
+      }
+
+      #first1 {
+        background-color: red;
+      }
+
+      #second1 {
+        background-color: green;
+      }
+
+      #third1 {
+        background-color: blue;
+      }
+    </style>
+    <style>
+      .box2 {
+        width: 60px;
+        height: 60px;
+        display: inline; /* width and height is working for inline element*/
+      }
+
+      #first2 {
+        background-color: red;
+      }
+
+      #second2 {
+        background-color: green;
+      }
+
+      #third2 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="first"></div>
+      <div class="box" id="second"></div>
+      <div class="box" id="third"></div>
+    </div>
+
+    <div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <hr />
+
+    <div>
+      <div class="box1" id="first1">FIRST ELEMENT</div>
+      <div class="box1" id="second1">SECOND ELEMENT</div>
+      <div class="box1" id="third1">THIRD ELEMENT</div>
+    </div>
+
+    <hr>
+
+    <div>
+      <div class="box2" id="first2">FIRST ELEMENT</div>
+      <div class="box2" id="second2">SECOND ELEMENT</div>
+      <div class="box2" id="third2">THIRD ELEMENT</div>
+  </body>
+</html>

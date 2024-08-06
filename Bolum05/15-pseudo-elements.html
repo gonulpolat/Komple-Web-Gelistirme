@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elements</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      p::first-line {
+        font-weight: bold;
+        color: brown;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+      }
+
+      p.about::first-line {
+        color: goldenrod;
+      }
+
+      p::first-letter {
+        font-size: 48px;
+      }
+
+      ::selection {
+        background-color: lightcoral;
+        color: white;
+      }
+
+      p::after {
+        content: "\2615";
+        font-size: 35px;
+        padding: 10px;
+      }
+
+      p.about::after {
+        content: "\26C5";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam accusantium
+      voluptatum aliquam dolorem atque quas unde consequuntur, debitis cum.
+      Repudiandae delectus eveniet temporibus deleniti aperiam, tenetur mollitia
+      facilis totam obcaecati!
+    </p>
+    <p class="about">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi quam
+      at consequuntur! Magni nesciunt sit aperiam ea maxime voluptatum rem nobis
+      quia. Facere corporis delectus sequi corrupti. Sequi, nihil molestias!
+    </p>
+  </body>
+</html>

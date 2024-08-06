@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Sizing</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* default --> content-box */
+      }
+
+      #showcase {
+        background: #6482ad;
+        height: 500px;
+        width: 100%; /* yan yana eleman geldiği zaman genişliğe sığması için */
+        padding: 10px;
+        border: 5px solid #f7b5ca;
+      }
+
+      #how-it-works {
+        background: #7fa1c3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section id="showcase">
+        <h1>Welcome To MovieApp</h1>
+      </section>
+      <section id="how-it-works">
+        <h2>How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>

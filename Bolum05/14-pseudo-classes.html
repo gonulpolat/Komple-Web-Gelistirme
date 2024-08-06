@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes</title>
+    <style>
+      a {
+        border: 1px solid gray;
+        padding: 5px 8px;
+        display: inline-block;
+        text-decoration: none;
+        width: 70px;
+        text-align: center;
+      }
+
+      a:link {
+        color: red;
+      }
+
+      a:visited {
+        color: chocolate;
+      }
+
+      a:hover {
+        color: white;
+        background-color: yellow;
+      }
+
+      a:active {
+        color: white;
+        background-color: lightgreen;
+      }
+
+      div p {
+        display: none;
+      }
+
+      div:hover p {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="13-combinators.html" target="_blank">Home</a>
+    <a href="12-styling-links.html" target="_blank">Product</a>
+    <a href="11-styling-list.html" target="_blank">Contact</a>
+
+    <br /><br />
+
+    <div>
+      Click here!
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nemo.
+      </p>
+    </div>
+  </body>
+</html>

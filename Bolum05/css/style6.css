@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+#showcase {
+  background-image: url("../images/home-bg.jpeg");
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  color: white;
+}
+
+.main-header {
+  background-color: #c75b7a;
+  padding: 8px 16px;
+}
+
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 101px);
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-nav__items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.main-header__logo {
+  color: white;
+  text-decoration: none; /* alçizgiyi kaldırır */
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.main-nav__item a {
+  /* main-nav__item altındaki a etiketlerine uygulanır */
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav__item a:hover,
+.main-nav__item:hover::before {
+  color: #921a40;
+}
+
+.main-nav__item a:active,
+.main-nav__item:active::before {
+  color: white;
+}
+
+.main-nav__item::before {
+  content: "\2022";
+  color: white;
+}
+
+.main-nav__item--login a {
+  background-color: #921a40;
+  padding: 4px 16px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.main-nav__item--login::before {
+  content: none;
+}
+
+.main-nav__item--login a:hover {
+  background-color: white;
+  color: #921a40;
+  border: 2px solid #921a40;
+}
+
+#how-it-works {
+  padding: 10px;
+  text-align: center;
+}
+
+#how-it-works h2 {
+  color: #3e4555;
+  font-size: 30px;
+}
+
+.row {
+  margin-bottom: 40px;
+}
+
+.col-3 {
+  display: inline-block;
+  width: 30%;
+  padding: 16px;
+  margin: 8px;
+}
+
+.col-2 {
+  display: inline-block;
+  width: calc(50% - 2px);
+  height: 350px;
+}
+
+.icon-box h3 {
+  color: #3e4555;
+  font-size: 26px;
+}
+
+.icon-box i {
+  color: #c75b7a;
+}
+
+.features__left {
+  background-image: url("../images/features.jpeg");
+  background-position: top center;
+  background-size: cover;
+}
+
+.features__rigth {
+  background-color: #f4d9d0;
+  padding: 40px;
+  vertical-align: top;
+}
+
+.features__rigth h3 {
+  font-size: 30px;
+  color: #3e4555;
+}
+
+#features a {
+  background-color: #c75b7a;
+  color: white;
+  padding: 7px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #c75b7a;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 15px 0;
+}
+
+#features a:hover {
+  background-color: white;
+  color: #c75b7a;
+}
