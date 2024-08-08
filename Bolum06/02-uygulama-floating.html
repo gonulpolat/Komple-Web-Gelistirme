@@ -1,0 +1,110 @@
+<!-- benim yazdığım -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Uygulaması</title>
+    <style>
+      header,
+      footer {
+        background-color: #474f7a;
+        color: #ffd0ec;
+        padding: 15px;
+      }
+
+      .row {
+        height: 300px;
+      }
+
+      .col-1 {
+        float: left;
+        width: 25%;
+      }
+      .col-1 ul {
+        padding: 0;
+      }
+
+      .col-1 li {
+        list-style: none;
+        margin-bottom: 10px;
+        border: 1px solid #1f2544;
+        background-color: #1f2544;
+        padding: 15px;
+      }
+
+      .col-1 a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .col-3 {
+        float: right;
+        width: 75%;
+        padding: 0;
+        vertical-align: top;
+      }
+
+      .col-3__inner {
+        padding: 0 15px;
+      }
+
+      h1 {
+        margin: 16px 0;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Header</h2>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <ul>
+              <li>
+                <a href="#">Html</a>
+              </li>
+              <li>
+                <a href="#">Css</a>
+              </li>
+              <li>
+                <a href="#">Javascript</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <div class="col-3__inner">
+              <h1>Komple Web Geliştirme Eğitimi</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                laboriosam totam distinctio id. Error eum, totam rerum at
+                consequuntur praesentium aliquid dolorum deserunt earum, tempora
+                blanditiis, odit autem eveniet consequatur.
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto,
+                magni at est perferendis officia deserunt. Laborum amet
+                recusandae nobis a quia accusamus tempora sit architecto sed
+                cupiditate. Cumque, rerum aliquid?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h2>Footer</h2>
+    </footer>
+  </body>
+</html>

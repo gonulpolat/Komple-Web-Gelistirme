@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clear Floating</title>
+    <style>
+      #container {
+        background-color: chocolate;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        float: right;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" class="clearfix">
+      <div class="box">Kutu 1</div>
+      <div class="box">Kutu 2</div>
+      <div class="box">Kutu 3</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatem
+      praesentium eligendi eum nisi! Soluta mollitia distinctio minus placeat
+      cum expedita, rerum corporis praesentium, aut nisi, illo necessitatibus
+      accusamus. Maiores?
+    </p>
+  </body>
+</html>

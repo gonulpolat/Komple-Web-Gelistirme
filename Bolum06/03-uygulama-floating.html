@@ -1,0 +1,96 @@
+<!-- hocanın yazdığı -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Uygulaması</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      header,
+      footer {
+        background-color: #d1478c;
+        color: #53d397;
+        padding: 15px;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .col {
+        float: left;
+        padding: 15px 15px 15px 0;
+      }
+
+      .menu {
+        width: 25%;
+      }
+
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: #ff7a5c;
+        color: white;
+      }
+
+      .menu li:hover {
+        cursor: pointer;
+        background-color: #d1478c;
+      }
+
+      .content {
+        width: 75%;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Header</h2>
+    </header>
+
+    <main class="clearfix">
+      <div class="col menu">
+        <ul>
+          <li>Html</li>
+          <li>Css</li>
+          <li>Javascript</li>
+        </ul>
+      </div>
+      <div class="col content">
+        <h1>Komple Web Geliştirme Eğitimi</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+          laborum atque doloremque deleniti excepturi molestiae, ipsum quibusdam
+          ipsam facilis labore minus qui culpa quas nulla obcaecati illum
+          numquam recusandae explicabo.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+          accusantium, eligendi fuga atque debitis nobis consectetur laudantium
+          eos, modi, dolorem ea. Quia esse sed quas eos? Sit quia quod minus.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <h2>Footer</h2>
+    </footer>
+  </body>
+</html>

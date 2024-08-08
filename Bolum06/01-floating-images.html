@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Images</title>
+    <style>
+      img {
+        width: 300px;
+        float: right;
+        margin-left: 10px;
+      }
+
+      p {
+        border: 2px solid red;
+        padding: 5px;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At quidem sit eum
+      officiis alias repellat aperiam, quasi aliquid architecto adipisci
+      mollitia rem laborum illo recusandae accusamus atque veritatis iure
+      voluptas!
+    </p>
+    <p class="clearfix">
+      <img src="images/rowing.jpeg" alt="" />
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cumque
+        molestiae, corrupti corporis accusantium expedita inventore quidem ab
+        debitis recusandae similique ex eaque provident, quibusdam deleniti
+        praesentium laudantium tempore velit!
+      </span>
+      <span>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore nam
+        numquam reprehenderit ipsam incidunt soluta sunt aspernatur distinctio
+        eum ullam obcaecati in facilis hic, placeat officiis nesciunt
+        praesentium aliquam maiores!
+      </span>
+      <span>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur optio
+        neque eum ut esse assumenda dolore est harum quia. Laborum voluptatibus
+        facere nesciunt dolorum, ab repudiandae facilis quos amet illum.
+      </span>
+    </p>
+  </body>
+</html>
