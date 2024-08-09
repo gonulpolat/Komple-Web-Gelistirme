@@ -1,0 +1,343 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&display=swap");
+
+@import url(buttons.css);
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  margin-top: 52px;
+}
+
+#showcase {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(199, 91, 122, 0.2),
+      rgba(209, 122, 147, 0.2)
+    ),
+    url("../img/bg.jpeg");
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#showcase .content {
+  color: white;
+  font-size: 20px;
+  background: rgba(46, 76, 109, 0.3);
+  padding: 20px;
+  width: 60%;
+  border-radius: 10px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-header {
+  background-color: #c75b7a;
+  padding: 8px 16px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 101px);
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-nav__items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.main-header__logo {
+  color: white;
+  text-decoration: none; /* alçizgiyi kaldırır */
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.main-nav__item a {
+  /* main-nav__item altındaki a etiketlerine uygulanır */
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav__item a:hover,
+.main-nav__item:hover::before {
+  color: #921a40;
+}
+
+.main-nav__item a:active,
+.main-nav__item:active::before {
+  color: white;
+}
+
+.main-nav__item::before {
+  content: "\2022";
+  color: white;
+}
+
+.main-nav__item--login::before {
+  content: none;
+}
+
+#how-it-works {
+  padding: 10px;
+  text-align: center;
+}
+
+.row {
+  margin-top: 40px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col-4 {
+  float: left;
+  width: 25%;
+}
+
+.col-3 {
+  float: left;
+  width: 33.3%;
+}
+
+.col-2 {
+  float: left;
+  width: 50%;
+}
+
+.icon-box h3 {
+  color: #3e4555;
+  font-size: 26px;
+}
+
+.icon-box i {
+  color: #c75b7a;
+}
+
+.features__left {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(199, 91, 122, 0.2),
+      rgba(209, 122, 147, 0.2)
+    ),
+    url("../img/features.jpeg");
+  background-position: top center;
+  background-size: cover;
+}
+
+.features__rigth {
+  background-color: #f4d9d0;
+  padding: 40px;
+  vertical-align: top;
+}
+
+.features__left,
+.features__rigth {
+  height: 350px;
+}
+
+.features__rigth h3 {
+  font-size: 30px;
+  color: #3e4555;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  color: #3e4555;
+  margin-bottom: 40px;
+}
+
+.plan {
+  text-align: center;
+  padding: 5px;
+}
+
+.inner-plan {
+  background-color: #f4d9d0;
+  padding: 20px 15px;
+  border-radius: 5px;
+  /* box-shadow: 5px 10px 15px 5px #888888; */
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; /* https://getcssscan.com/css-box-shadow-examples */
+  transition: box-shadow 0.6s;
+}
+
+.inner-plan:hover {
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.5) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.7) 0px 30px 60px -30px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  margin: 0 auto;
+  /* width: 1000px; */
+}
+
+.plan__badge {
+  background-color: white;
+  color: #c75b7a;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.recomended_plan {
+  color: white;
+  background-color: #c75b7a !important; /* inner-plan'dan aşağıda olduğu için zaten bu satır çalışır. fakat yukarıda olsaydı !important kullanmamız gerekecekti */
+}
+
+.plan__features {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan__features li {
+  margin: 6px 0;
+}
+
+.plan--featured {
+  position: relative;
+  top: -20px;
+}
+
+#backtotop {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  color: #921a40;
+}
+
+#backtotop:hover {
+  color: #be4164;
+  transition-duration: 0.4s;
+}
+
+.counter {
+  background-image: linear-gradient(to bottom, #d17a93 0%, #be4164 100%);
+  text-align: center;
+  padding: 20px;
+}
+
+.counter__item {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.counter h4 {
+  margin: 0;
+  color: white;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 10px 10px 40px rgba(52, 58, 64, 0.1);
+  /* position: relative;
+  top: 0; */
+  transition: all 0.3s;
+}
+
+.card:hover {
+  /* top: -10px; */
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 40px rgba(52, 58, 64, 0.2);
+}
+
+.card-container {
+  padding: 10px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-image {
+  max-height: 350px;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+footer {
+  background-color: #921a40;
+  padding: 30px;
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  bottom: -200px;
+}
+
+footer a,
+footer i {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#social-links {
+  text-align: right;
+}
+
+.fa-brands {
+  padding: 10px;
+}
+
+.fa-brands:hover {
+  opacity: 0.7;
+}

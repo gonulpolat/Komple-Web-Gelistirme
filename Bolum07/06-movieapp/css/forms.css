@@ -1,0 +1,25 @@
+.signup-title {
+  text-align: center;
+  font-size: 30px;
+  color: #3e4555;
+}
+
+.signup-form {
+  width: 500px;
+  margin: auto;
+}
+
+.form-group label,
+.form-group input:not([type="checkbox"]),
+.form-group select {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-group input[type="checkbox"],
+.form-group input[type="checkbox"] + label {
+  display: inline;
+  width: auto;
+  margin: 20px 0;
+}

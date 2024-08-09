@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      body {
+        background-color: brown;
+      }
+
+      h1 {
+        display: none;
+      }
+
+      #phone h1 {
+        display: block;
+      }
+
+      /* landscape */
+      @media (min-width: 576px) and (max-width: 767px) {
+        body {
+          background-color: yellow;
+        }
+
+        #landscape h1 {
+          display: block;
+        }
+
+        #phone h1 {
+          display: none;
+        }
+      }
+
+      /* tablet */
+      @media (min-width: 768px) and (max-width: 991px) {
+        body {
+          background-color: green;
+        }
+
+        #tablet h1 {
+          display: block;
+        }
+
+        #phone h1 {
+          display: none;
+        }
+      }
+
+      /* desktop */
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body {
+          background-color: blue;
+        }
+
+        #desktop h1 {
+          display: block;
+        }
+
+        #phone h1 {
+          display: none;
+        }
+      }
+
+      /* large desktop */
+      @media (min-width: 1200px) and (max-width: 1399px) {
+        body {
+          background-color: red;
+        }
+
+        #large-desktop h1 {
+          display: block;
+        }
+
+        #phone h1 {
+          display: none;
+        }
+      }
+
+      /* xlarge desktop */
+      @media (min-width: 1400px) {
+        body {
+          background-color: pink;
+        }
+
+        #xlarge-desktop h1 {
+          display: block;
+        }
+
+        #phone h1 {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="phone">
+      <h1>phone</h1>
+    </div>
+    <div id="landscape">
+      <h1>landscape</h1>
+    </div>
+    <div id="tablet">
+      <h1>tablet</h1>
+    </div>
+    <div id="desktop">
+      <h1>desktop</h1>
+    </div>
+    <div id="large-desktop">
+      <h1>large desktop</h1>
+    </div>
+    <div id="xlarge-desktop">
+      <h1>xlarge desktop</h1>
+    </div>
+  </body>
+</html>

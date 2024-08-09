@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieApp</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="body">
+    <header class="main-header">
+      <div class="container">
+        <a href="#" class="main-header__logo">MovieApp</a>
+
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a href="#">Movies</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Tv Shows</a>
+            </li>
+            <li class="main-nav__item main-nav__item--login">
+              <a href="#" class="btn btn-secondary">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="signup-page">
+      <h1 class="signup-title">Create Your Account</h1>
+      <form action="" class="signup-form">
+        <div class="form-group">
+          <label for="firstname">Firstname</label>
+          <input type="text" id="firstname" />
+        </div>
+
+        <div class="form-group">
+          <label for="lastname">Lastname</label>
+          <input type="text" id="lastname" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option value="">Select</option>
+            <option value="">Female</option>
+            <option value="">Male</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" name="" id="agree-terms" />
+          <label for="agree-terms"
+            >Agree to
+            <a href="#">Terms &amp; Conditions</a>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <ul id="footer-links">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Forum</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <ul id="social-links">
+              <li>
+                <i class="fa-brands fa-facebook fa-xl"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-square-instagram fa-xl"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-threads fa-xl"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-youtube fa-xl"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

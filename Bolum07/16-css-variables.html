@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Variables</title>
+    <style>
+      /* body {
+        background-color: #a2b9bc;
+      }
+
+      .container {
+        background-color: white;
+      }
+
+      h2 {
+        border-bottom: 1px solid #a2b9bc;
+      } */
+
+      :root {
+        /* global color variables */
+        --gray: #a2b9bc;
+        --white: #fff;
+      }
+
+      body {
+        --gray: #878f99; /* global variable'ı değiştirebiliriz. */
+        background-color: var(--gray);
+      }
+
+      .container {
+        background-color: var(--white);
+        color: var(--gray);
+        padding: 20px;
+      }
+
+      h2 {
+        border-bottom: 1px solid var(--gray);
+      }
+
+      button {
+        background-color: var(--white);
+        color: var(--gray);
+        border: 1px solid var(--gray);
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <div class="container">
+      <h2>Lorem, ipsum dolor.</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aut
+        tenetur voluptas consectetur aliquid numquam, molestias assumenda
+        placeat ratione, dicta impedit alias itaque veritatis quibusdam ex!
+        Explicabo excepturi doloribus architecto.
+      </p>
+      <div>
+        <button>Ok</button>
+        <button>Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>
